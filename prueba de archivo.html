@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            body {
+                background-color: black;;
+            }
+            button {
+                background-color: black;
+                color:white;
+                font-size:32px;
+                margin-left: 5px;
+                border-color:orange ;
+                margin-top: 35px;
+                text-transform: uppercase;
+                padding: 10px;
+                
+            }
+        </style>
+    </head>
+    <body><center>
+        <div>
+            <button onclick="js()">SUMAR</button>
+            <script>
+                function js() {
+                    let a = parseFloat(prompt("Ingrese el primer numero:"));
+                    let b = parseFloat(prompt("Ingrese el segundo numero:"));
+                    let suma = a + b;
+                    alert("La suma es: " + suma);
+                }
+            </script>
+            <button onclick="js1()">Restar</button>
+            <script>
+                function js1() {
+                    let a = parseFloat(prompt("Ingrese el primer numero:"));
+                    let b = parseFloat(prompt("Ingrese el segundo numero:"));
+                    let c = a - b;
+                    alert("La resta es: " + c);
+                }
+            </script>
+            <button onclick="js2()">Multiplicar</button>
+            <script>
+                function js2() {
+                    let a = parseFloat(prompt("Ingrese el primer numero:"));
+                    let b = parseFloat(prompt("Ingrese el segundo numero:"));
+                    let c = a * b;
+                    alert("La multiplicacion es: " + c);
+                }
+            </script>
+            <button onclick="js3()">Divicion</button>
+            <script>
+                function js3() {
+                    let a = parseFloat(prompt("Ingrese el primer numero:"));
+                    let b = parseFloat(prompt("Ingrese el segundo numero:"));
+                    let c = a / b;
+                    alert("La division es: " + c);
+                }
+            </script>
+        </div>
+    </center></body>
+</html>
